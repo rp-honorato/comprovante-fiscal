@@ -17,7 +17,12 @@ DATA: numerodoc(9)  TYPE c ,
       recibo(12) type c,
       operador(6) type c,
       nomeoprd type string,
-      categoriaoprd(2) type c.
+      categoriaoprd(2) type c,
+      valorpgto(5) type c,
+      fpgto type string,
+      esusp(2) type c,
+      catorig type c,
+      placa(7) type c.
 
 numerodoc = 'IN31/17'.
 nomeempresa = 'AUTOPISTA LITORAL SUL S/A'.
@@ -32,10 +37,20 @@ recibo = 'U6FD54U2QG22'.
 operador = '05491'.
 nomeoprd = 'BEATRIZ'.
 categoriaoprd = '01'.
+valorpgto = '4.10'.
+fpgto = 'Dinheiro'.
+esusp = '00'.
+catorig = '01'.
+placa = 'BDS2130'.
 
 WRITE: / 'DOC. FISCAL EQUIVALENTE', numerodoc, 'Art.2',
        / nomeempresa,
        / cnpj,
        / cidade, 'KM' && km1 && '+' && km2, 'VIA:', via,
        / datacomprovante, horacomprovante, 'Recibo:', recibo,
-       / 'Operador: ' && operador, '-' , nomeoprd, 'Cat.:', categoriaoprd.
+       / 'Operador: ' && operador, '-' , nomeoprd, 'Cat.:', categoriaoprd,
+       / 'Valor Pago: R$', valorpgto, 'F.Pgto:', fpgto,
+       / 'E.SUSP:', esusp, '(LEI 13.103/15)', 'CAT.ORIG:', catorig,
+       / 'PLACA:', placa,
+       / 'Valor aprx. de trib. 18,24% (fonte:IBPT)',
+       / 'Para incluir placa/CPF/CNPJ acesse até 7 dias https://dfe.arteris.com.br'.
