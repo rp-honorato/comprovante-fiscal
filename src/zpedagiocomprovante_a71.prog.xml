@@ -20,20 +20,15 @@
       </item>
       <item>
        <ID>S</ID>
-       <KEY>P_FRM1</KEY>
-       <ENTRY>Dinheiro</ENTRY>
-       <LENGTH>16</LENGTH>
+       <KEY>P_DATA</KEY>
+       <ENTRY>Data</ENTRY>
+       <LENGTH>12</LENGTH>
       </item>
       <item>
        <ID>S</ID>
-       <KEY>P_FRM2</KEY>
-       <ENTRY>Débito</ENTRY>
-       <LENGTH>14</LENGTH>
-      </item>
-      <item>
-       <ID>S</ID>
-       <KEY>P_FRMPGT</KEY>
-       <LENGTH>16</LENGTH>
+       <KEY>P_HORA</KEY>
+       <ENTRY>Hora</ENTRY>
+       <LENGTH>12</LENGTH>
       </item>
       <item>
        <ID>S</ID>
